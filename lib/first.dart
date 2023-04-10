@@ -10,7 +10,7 @@ class first extends StatelessWidget {
     return Scaffold(
       body: CustomScrollView(slivers: [
         SliverAppBar(
-            toolbarHeight: 150,
+            collapsedHeight: 120,
             shape: const RoundedRectangleBorder(
                 borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(25),
@@ -62,7 +62,7 @@ class first extends StatelessWidget {
               ),
             ]),
 
-            
+
         SliverList(delegate: SliverChildBuilderDelegate(
           (context, index) {
             return ListTile(
